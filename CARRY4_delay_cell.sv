@@ -9,11 +9,9 @@ module CARRY4_delay_cell (
         .CYINT(start),
         .DI(4'b0000),
         .S(4'b1111),
-        .O(),
+        .O(delay_taps),
         .CO(carry_out)
 
-    assign delay_taps = carry_out;
     );
-
 
 endmodule
